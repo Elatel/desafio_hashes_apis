@@ -14,12 +14,12 @@ ventas = {
 }
 
 total = ventas.to_a
-ql = {}
+new_hash = {}
 total_first = 0
 first = total.slice(0..2)
 first.each do |k,v|
     total_first += v
-    ql.store(:Q1, total_first)
+    new_hash.store(:Q1, total_first)
 end
 
 
@@ -27,7 +27,7 @@ total_second = 0
 second = total.slice(3..6)
 second.each do |k,v|
     total_second += v
-    ql.store(:Q2, total_second)
+    new_hash.store(:Q2, total_second)
 end
 
 
@@ -35,7 +35,7 @@ total_third = 0
 third = total.slice(7..9)
 third.each do |k,v|
     total_third += v
-    ql.store(:Q3, total_third)
+    new_hash.store(:Q3, total_third)
 end
 
 
@@ -43,9 +43,9 @@ total_forth = 0
 forth = total.slice(9..11)
 forth.each do |k,v|
     total_forth += v
-    ql.store(:Q4, total_forth)
+    new_hash.store(:Q4, total_forth)
 end
 
-print ql
+print new_hash
 
 
