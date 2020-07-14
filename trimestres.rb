@@ -13,6 +13,14 @@ ventas = {
     Diciembre: 21000
 }
 
+#ventas.each_slice(3).with_index do |slice, index|
+    # suma = 0
+    #slice.each(0) do |month_info|
+        # suma += month_info[1]
+    # end
+    # print suma
+#end
+
 total = ventas.to_a
 new_hash = {}
 
