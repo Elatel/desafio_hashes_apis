@@ -15,6 +15,7 @@ ventas = {
 
 total = ventas.to_a
 new_hash = {}
+
 total_first = 0
 first = total.slice(0..2)
 first.each do |k,v|
