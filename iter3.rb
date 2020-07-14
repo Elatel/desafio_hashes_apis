@@ -14,10 +14,15 @@ ventas = {
 }
 def filter(ventas)
     number = ARGV[0].to_i
-    filter = {}
-    ventas.each {|k,v| filter[k] = v if v > number}
+    # filter = {}
+    # ventas.each {|k,v| filter[k] = v if v > number}
 
-    filter
+    # filter
+    ventas.select {|k,v| v > number}
 end
 
 print filter(ventas)
+
+system('cls')
+resultado = filter(ventas)
+print resultado
