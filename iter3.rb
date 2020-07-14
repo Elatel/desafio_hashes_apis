@@ -15,9 +15,8 @@ ventas = {
 def filter(ventas)
     number = ARGV[0].to_i
     filter = {}
-    ventas.each do |k,v|
-        filter[k] = v if v > number
-    end
+    ventas.each {|k,v| filter[k] = v if v > number}
+
     filter.values
 end
 
