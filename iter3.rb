@@ -17,7 +17,7 @@ def filter(ventas)
     filter = {}
     ventas.each {|k,v| filter[k] = v if v > number}
 
-    filter.values
+    filter
 end
 
 print filter(ventas)
